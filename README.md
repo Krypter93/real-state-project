@@ -8,5 +8,5 @@ This project is with HTML, CSS, JS, PHP and MySQL.
 
 Free hosting with 000webhost
 
-Link to visit: [Link to website](https://proyecto-inmobiliaria-deusto.000webhostapp.com/index.php) 
+[Link to website](https://proyecto-inmobiliaria-deusto.000webhostapp.com/index.php) 
 
