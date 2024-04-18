@@ -1,0 +1,135 @@
+body {
+    background-color: #6610f2;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.main-container {
+    background-color:white;
+    width: 900px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin: 60px;
+    color: #6610f2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+
+a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #6610f2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: ease 0.3s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    transform: scale(1.1) ;
+}
+
+img {
+    width: 420px;
+    height: 350px;
+    margin: 25px 20px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.face, .xt, .inst, .tk, .yt {
+    cursor: pointer;
+}
+
+
+/* Media queries para diseño responsivo */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas*/
+    .main-container {
+        position: absolute;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: fit-content;
+        height: fit-content;
+        margin: 10px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .card-title {
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    h1 {
+        margin: 10px auto;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+    };
+
+    button:hover {
+        transform: scale(1.1) ;
+    }
+
+    footer {
+        position: relative;
+    }
+  }
+  
+
+
+
+
+
+
+

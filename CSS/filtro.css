@@ -1,0 +1,80 @@
+.filtro {
+    background-color: #6610f2;
+    
+}
+
+.titulo{
+    color: #6610f2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.pref {
+    height:250px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bt {
+    background-color: #6610f2;
+    color: white;
+    letter-spacing: 2px;
+    transition: ease 0.3s;
+    border: none;
+}
+
+.bt:hover {
+    background-color: #6610f2;
+    color: white;
+    transform: scale(1.1) ;
+}
+
+select {
+    letter-spacing: 0.5px;
+}
+
+.texto {
+    position: relative;
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+    font-style: italic;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    height: 35vh;
+    justify-content: flex-end;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Media queries para diseño responsivo */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas*/
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .texto {
+        margin: 30px auto;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+  }
+
+
+
+
+
