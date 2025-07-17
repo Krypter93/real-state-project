@@ -10,3 +10,20 @@ Free hosting with 000webhost
 
 [Link to website](https://proyecto-inmobiliaria-deusto.000webhostapp.com/index.php) 
 
+
+## Docker
+
+### Build the image
+
+```bash
+docker build -t real-state-app .
+```
+
+### Run the container
+
+```bash
+docker run -p 8080:80 real-state-app
+```
+
+Then open [http://localhost:8080](http://localhost:8080) in your browser.
+
