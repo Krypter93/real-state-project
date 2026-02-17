@@ -27,3 +27,23 @@ docker run -p 8080:80 real-state-app
 
 Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
+
+## Finance/Manager Daily Ops MVP
+
+### Backend (FastAPI)
+
+New API app under `backend/app`:
+
+- `POST /ops/daily-run`: runs CSV sync for each source configured in `CSV_SOURCES` (comma-separated).
+- `POST /weeks/{weekStart}/close`: closes week once and persists `WeekClosure` + `WeekAgentSnapshot`.
+- `GET /weeks/{weekStart}/export`: exports week snapshots as CSV.
+
+Use role header `X-Role: finance` or `X-Role: manager`.
+
+### Frontend (React)
+
+New Ops UI under `frontend/src`:
+
+- `/ops` route with **Run Daily Sync** button.
+- **Close week** button with `confirm()`.
+- Export CSV link for selected week.
